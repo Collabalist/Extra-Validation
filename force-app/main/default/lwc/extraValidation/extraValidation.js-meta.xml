@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>58.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Extra Validation</masterLabel>
+    <targets>
+        <target>lightning__FlowScreen</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets = "lightning__FlowScreen">
+            <property 
+                label = "Validation Expression"
+                name = "validationExpression"
+                type = "Boolean"
+                default = "true"
+                description = "This will check if the expression/value is valid(true) or not(false)."/>
+            <property 
+                label = "Validation Error Message"
+                name = "errorMsg"
+                type = "String"
+                default = ""
+                description = "Enter the Error Message to be displayed if the expression/value is not(false) valid."/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>
