@@ -1,3 +1,26 @@
+# Extra Validation for screen flow
+We can have the input validation for the input fields such as 
+- Text
+- Number
+- Date
+- Date & Time
+- etc.,
+- but not for the picklist or any additional condition that we generate from the same screen
+
+## Here how we can have that extra set of validation to validate the input from the current screen
+- Connect To Element
+![image](https://github.com/Collabalist/Extra-Validation/assets/31879436/87f698ab-29f1-45d8-9af0-025658941520)
+- we should use this only when we have to connect the forward progressing element - not the previous screen or previouse element. Connect to the previous element in the flow will re-create the whole element as on the next step
+![image](https://github.com/Collabalist/Extra-Validation/assets/31879436/1ab68eab-33f9-4b84-8063-2d84c34c2a41)
+- and that creates a stack of element so if we go previous on the screen, it will fetch the same set of elements again.
+
+- Extra-Validation
+-- this custom LWC component is only for the screen flow - and it is a blank empty field which can have the validation using the same screen elements or the elements which state hold the the value for the current screen
+![image](https://github.com/Collabalist/Extra-Validation/assets/31879436/c3cfeb1a-4aed-427a-bcc0-8a733e9c3189)
+
+-- we can also give the custom error message to show if not validated
+
+
 # Salesforce DX Project: Next Steps
 
 Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
